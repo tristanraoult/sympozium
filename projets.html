@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Projets & clients | Sympozium</title>
+  <meta name="description" content="Découvrez le portfolio de l'agence digitale Sympozium. Création de sites internet, applications mobiles, identités de marque et stratégies digitales.">
+  <meta name="keywords" content="portfolio web bordeaux, projets communication, creation site internet, design bordeaux, Sympozium">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nos Projets & clients | Sympozium">
+  <meta property="og:description" content="Explorez nos projets en web design, développement d'applications et branding créés pour nos clients depuis 2001.">
+  <meta property="og:url" content="https://sympozium.fr/projets.html">
+  <meta property="og:type" content="website">
+  
+  <link rel="canonical" href="https://sympozium.fr/projets.html">
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* Filter Bar Styles */
+    .filter-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 4rem;
+      flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+      font-family: var(--font-secondary);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid var(--color-border);
+      background: transparent;
+      color: var(--color-text);
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+    
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: var(--color-text-light);
+    }
+    
+    /* Project item transitions */
+    .project-item.hidden {
+      display: none;
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Sympozium",
+    "description": "Portfolio de projets de l'agence digitale Sympozium.",
+    "url": "https://sympozium.fr/projets.html",
+    "telephone": "+33952576814",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1 rue Lucien Faure",
+      "addressLocality": "Bordeaux",
+      "postalCode": "33300",
+      "addressCountry": "FR"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-ring"></div>
+
+  <!-- Sticky Side Navigation -->
+  <nav class="side-nav">
+    <a href="index.html" class="side-logo" aria-label="Sympozium - Retour à l'accueil">
+      <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+        <path d="m0 0h70v70h-70z" fill="#ec0928" />
+        <path d="m566.074 476.571h-12.259c-2.344 0-4.36-1.607-4.36-3.5s2.016-3.5 4.36-3.5h14.3c-2.9 2.392-5.408 4.466-6.578 5.434h3.991c1.5-1.254 4.034-3.363 6.806-5.671.046-.034.162-.142.162-.142a1.219 1.219 0 0 0 .363-.855 1.262 1.262 0 0 0 -1.235-1.234h-17.809c-3.743 0-6.787 2.675-6.787 5.966 0 3.251 3.044 5.923 6.787 5.923h12.259c2.346 0 4.323 1.6 4.323 3.5s-1.977 3.582-4.323 3.582h-14.281c1.51-1.261 3.948-3.293 6.6-5.5h-3.928c-3.054 2.518-5.733 4.734-6.9 5.7a2.749 2.749 0 0 0 -.219.19 1.183 1.183 0 0 0 -.313.8 1.2 1.2 0 0 0 1.194 1.234h17.852c3.745 0 6.789-2.754 6.789-6.007-.005-3.291-3.049-5.92-6.794-5.92z" fill="#fff" transform="translate(-525.614 -442.393)" />
+      </svg>
+      <span>Sympozium</span>
+    </a>
+    
+    <div class="scroll-progress-container">
+      <div class="scroll-progress-bar"></div>
+    </div>
+    
+    <button class="menu-btn" aria-label="Menu principal">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <div class="side-socials">
+      <a href="https://www.linkedin.com/company/sympozium/" target="_blank" rel="noopener" aria-label="Linkedin">
+        <svg viewBox="0 0 24 24"><path d="m4.4 9.3h3.3v10.5h-3.3zm1.6-5.2c1 0 1.9.9 1.9 1.9s-.9 1.9-1.9 1.9-1.9-.8-1.9-1.9.8-1.9 1.9-1.9zm3.7 5.2h3.1v1.4c.7-1 1.9-1.7 3.2-1.6 3.3 0 3.9 2.2 3.9 5v5.8h-3.3v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7v5.2h-3.2z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/sz_agency/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="m20.7 8.7v3.6s0 2.9-.1 3.7-.2 1.4-.3 1.9c-.2.7-.6 1.2-1.1 1.7s-1 .8-1.7 1.1c-.5.2-1.2.3-1.9.3s-1.9 0-3.6 0-2.9 0-3.7-.1-1.3-.1-1.9-.3c-.7-.2-1.2-.6-1.7-1s-.8-1-1.1-1.7c-.2-.5-.3-1.2-.3-1.9s-.1-2-.1-3.7 0-2.9.1-3.7.1-1.4.3-1.9c.3-.7.6-1.2 1.1-1.7s1-.8 1.7-1.1c.6-.2 1.2-.3 1.9-.3s2-.1 3.7-.1 2.9 0 3.7.1 1.4.1 1.9.3c.7.2 1.2.6 1.7 1.1s.8 1 1.1 1.7c.1.5.3 1.2.3 2zm-1.9 8.7c.2-.4.3-1.1.3-2.1 0-.6 0-1.4 0-2.4v-1.2c0-1.1 0-1.9 0-2.4-.1-1-.2-1.7-.3-2.1-.3-.8-.9-1.4-1.7-1.7-.4-.2-1.1-.3-2.1-.4-.6 0-1.4 0-2.4 0h-1.2c-1 0-1.8 0-2.4 0-1 .1-1.7.2-2.2.3-.8.4-1.3.9-1.6 1.7-.2.4-.3 1.1-.3 2.1v2.4 1.2 2.4c.1 1 .2 1.7.3 2.1.3.8.9 1.4 1.7 1.7.4.3 1.1.4 2.1.4h2.4 1.2 2.4c1-.1 1.7-.2 2.1-.3.9-.3 1.4-.9 1.7-1.7zm-6.8-9.6c.8 0 1.6.2 2.2.6s1.2 1 1.6 1.6.6 1.4.6 2.2-.2 1.6-.6 2.2-1 1.2-1.6 1.6-1.4.6-2.2.6-1.6-.2-2.2-.6-1.2-1-1.6-1.6-.6-1.4-.6-2.2.2-1.6.6-2.2 1-1.2 1.6-1.6 1.4-.6 2.2-.6zm0 7.4c.8 0 1.5-.3 2.1-.9s.9-1.3.9-2.1-.3-1.5-.9-2.1-1.3-.7-2.1-.7-1.5.3-2.1.9-.9 1.3-.9 2.1.3 1.5.9 2.1 1.3.7 2.1.7zm5.7-7.6c0-.3-.1-.5-.3-.7s-.4-.4-.7-.4-.5.1-.7.3-.3.5-.3.7.1.5.3.7.5.3.7.3.5-.1.7-.3.3-.3.3-.6z"/></svg>
+      </a>
+      <a href="http://www.facebook.com/agenceSYMPOZIUM" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="m13.2 19.5v-6.8h2.3l.3-2.7h-2.7v-1.7c0-.7.2-1.3 1.3-1.3h1.4v-2.4c-.3 0-1.2-.1-2.1-.1-1.8-.1-3.3 1.2-3.4 3v.5 2h-2.2v2.7h2.3v6.8z"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Navigation Overlay -->
+  <div class="menu-overlay">
+    <div class="menu-content">
+      <ul class="menu-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="agence.html">L'Agence</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-overlay-cta">
+        <a href="contact.html#rdv" class="btn-primary">Prendre rendez-vous</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Wrapper -->
+  <div class="main-wrapper">
+    
+    <!-- Page Header -->
+    <header class="page-header reveal">
+      <span class="uppercase-label">Portfolio</span>
+      <h1>Projets & clients</h1>
+      <p class="tagline">Creative web + print solutions. Retrouvez un aperçu de nos projets marquants de création de sites internet, applications web et mobiles, et identités visuelles.</p>
+    </header>
+
+    <!-- Project List Section -->
+    <section class="section" style="padding-top: 0;">
+      
+      <!-- Filters -->
+      <div class="filter-container reveal">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="web">Web & Plateformes</button>
+        <button class="filter-btn" data-filter="branding">Design & Branding</button>
+        <button class="filter-btn" data-filter="mobile">Apps Mobiles</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="projects-masonry reveal-stagger">
+        
+        <!-- Project 1: Liiska -->
+        <a href="projet-liiska.html" class="project-item size-large" data-category="web" aria-label="Découvrir le projet Liiska">
+          <div class="project-img-box">
+            <img src="assets/liiska-bg-gunmetal-570x570.png" alt="Liiska Platform" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <p>Plateforme & Web App</p>
+            <h3>Liiska</h3>
+          </div>
+        </a>
+        <div class="project-info-fallback">
+          <h3>Liiska</h3>
+          <p>Plateforme & Web App</p>
+        </div>
+
+        <!-- Project 2: PractiMed -->
+        <a href="projet-practimed.html" class="project-item size-small" data-category="web" aria-label="Découvrir le projet PractiMed">
+          <div class="project-img-box">
+            <img src="assets/practimed-bleu-570x570.png" alt="PractiMed Platform" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <p>E-Learning Vidéo</p>
+            <h3>PractiMed</h3>
+          </div>
+        </a>
+        <div class="project-info-fallback">
+          <h3>PractiMed</h3>
+          <p>E-Learning Vidéo</p>
+        </div>
+
+        <!-- Project 3: Pont Chaban Bdx -->
+        <a href="projet-pont-chaban-bdx.html" class="project-item size-small" data-category="mobile" aria-label="Découvrir le projet Pont Chaban Bdx">
+          <div class="project-img-box">
+            <img src="assets/app-pont-chaban-bdx-570x570.png" alt="Pont Chaban Bdx App" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <p>Application Mobile</p>
+            <h3>Pont Chaban Bdx</h3>
+          </div>
+        </a>
+        <div class="project-info-fallback">
+          <h3>Pont Chaban Bdx</h3>
+          <p>Application Mobile</p>
+        </div>
+
+        <!-- Project 4: Fondation Ramsay Santé -->
+        <a href="projet-ramsay-sante.html" class="project-item size-large" data-category="web" aria-label="Découvrir le projet Fondation Ramsay Santé">
+          <div class="project-img-box">
+            <img src="assets/fondation-ramsay-sante-570x570.jpg" alt="Fondation Ramsay Santé" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <p>Portail Santé Prévention</p>
+            <h3>Fondation Ramsay Santé</h3>
+          </div>
+        </a>
+        <div class="project-info-fallback">
+          <h3>Fondation Ramsay Santé</h3>
+          <p>Portail Santé Prévention</p>
+        </div>
+
+        <!-- Project 5: Yako Fitness -->
+        <div class="project-item size-medium-6" data-category="web">
+          <div class="project-img-box">
+            <img src="assets/yako-fitness-570x570.jpg" alt="Yako Fitness" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <p>Plateforme VOD Sport</p>
+            <h3>Yako Fitness</h3>
+          </div>
+        </div>
+        <div class="project-info-fallback">
+          <h3>Yako Fitness</h3>
+          <p>Plateforme VOD Sport</p>
+        </div>
+
+        <!-- Project 6: La Maison du Store -->
+        <div class="project-item size-medium-6" data-category="branding">
+          <div class="project-img-box">
+            <img src="assets/maison-du-store-logo-570x570.png" alt="La Maison du Store" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <p>Identité Visuelle & Logo</p>
+            <h3>La Maison du Store</h3>
+          </div>
+        </div>
+        <div class="project-info-fallback">
+          <h3>La Maison du Store</h3>
+          <p>Identité Visuelle & Logo</p>
+        </div>
+
+        <!-- Project 7: Alternativ Développement -->
+        <div class="project-item size-small" data-category="branding">
+          <div class="project-img-box">
+            <img src="assets/alternativ-developpement-570x570.jpg" alt="Alternativ Développement" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <p>Branding & Site Web</p>
+            <h3>Alternativ Dev</h3>
+          </div>
+        </div>
+        <div class="project-info-fallback">
+          <h3>Alternativ Dev</h3>
+          <p>Branding & Site Web</p>
+        </div>
+
+        <!-- Project 8: Château le Puy -->
+        <div class="project-item size-large" data-category="branding">
+          <div class="project-img-box">
+            <img src="assets/chateau-le-puy-brand-570x570.jpg" alt="Château le Puy" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <p>Identité & Communication</p>
+            <h3>Château le Puy</h3>
+          </div>
+        </div>
+        <div class="project-info-fallback">
+          <h3>Château le Puy</h3>
+          <p>Identité & Communication</p>
+        </div>
+
+        <!-- Project 9: We Are Fitness App -->
+        <div class="project-item size-medium-6" data-category="mobile">
+          <div class="project-img-box">
+            <img src="assets/wrf-appli-3-570x570.jpg" alt="We Are Fitness App" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <p>Application Mobile VOD</p>
+            <h3>We Are Fitness App</h3>
+          </div>
+        </div>
+        <div class="project-info-fallback">
+          <h3>We Are Fitness App</h3>
+          <p>Application Mobile VOD</p>
+        </div>
+
+        <!-- Project 10: Cabinet Ophtalmologique Thiers -->
+        <div class="project-item size-medium-6" data-category="web">
+          <div class="project-img-box">
+            <img src="assets/bordeaux-vision-et-lasers-vignette-570x570.jpg" alt="Cabinet Ophtalmologique Thiers" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <p>Site Web & Identité</p>
+            <h3>Cabinet Thiers Bordeaux</h3>
+          </div>
+        </div>
+        <div class="project-info-fallback">
+          <h3>Cabinet Thiers Bordeaux</h3>
+          <p>Site Web & Identité</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Sympozium</h2>
+          <p>Creative web + print solutions. Agence digitale à Bordeaux depuis 2001.</p>
+          <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+            <path d="m0 0h70v70h-70z" fill="#ec0928" />
+            <path d="m566.074 476.571h-12.259c-2.344 0-4.36-1.607-4.36-3.5s2.016-3.5 4.36-3.5h14.3c-2.9 2.392-5.408 4.466-6.578 5.434h3.991c1.5-1.254 4.034-3.363 6.806-5.671.046-.034.162-.142.162-.142a1.219 1.219 0 0 0 .363-.855 1.262 1.262 0 0 0 -1.235-1.234h-17.809c-3.743 0-6.787 2.675-6.787 5.966 0 3.251 3.044 5.923 6.787 5.923h12.259c2.346 0 4.323 1.6 4.323 3.5s-1.977 3.582-4.323 3.582h-14.281c1.51-1.261 3.948-3.293 6.6-5.5h-3.928c-3.054 2.518-5.733 4.734-6.9 5.7a2.749 2.749 0 0 0 -.219.19 1.183 1.183 0 0 0 -.313.8 1.2 1.2 0 0 0 1.194 1.234h17.852c3.745 0 6.789-2.754 6.789-6.007-.005-3.291-3.049-5.92-6.794-5.92z" fill="#fff" transform="translate(-525.614 -442.393)" />
+          </svg>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Plan du site</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Projets clients</a></li>
+            <li><a href="services.html">Nos services</a></li>
+            <li><a href="agence.html">L'agence digitale</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>
+            Sympozium<br>
+            1 rue Lucien Faure<br>
+            33300 Bordeaux
+          </p>
+          <p>
+            <a href="tel:+33952576814">+33 (0)9 52 57 68 14</a>
+            <a href="mailto:contact@sympozium.fr">contact@sympozium.fr</a>
+          </p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sympozium. Tous droits réservés.</p>
+        <p class="made-with">Site redesigné avec attention ♥ par Tristan</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  
+  <!-- Inline script for projects filtering -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projectItems = document.querySelectorAll('.projects-masonry .project-item');
+      const projectFallbacks = document.querySelectorAll('.projects-masonry .project-info-fallback');
+      
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterBtns.forEach(b => b.classList.remove('active'));
+          // Add active class to clicked button
+          btn.classList.add('active');
+          
+          const filterValue = btn.getAttribute('data-filter');
+          
+          projectItems.forEach((item, index) => {
+            const category = item.getAttribute('data-category');
+            const fallback = projectFallbacks[index];
+            
+            if (filterValue === 'all' || category === filterValue) {
+              item.classList.remove('hidden');
+              if (fallback) fallback.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+              if (fallback) fallback.classList.add('hidden');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
